@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 13 Formulários HTML</title>
+</head>
+
+<body>
+    <form action="paginaDestino.jsp" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="">Nome</label>
+                <input type="text" name="txtNome" id="txtNome">
+            </div>
+            <div>
+                <label for="">CPF</label>
+                <input type="text" name="txtNome" id="txtCPF">
+            </div>
+            <div>
+                <label for="">Ano de Nascimento</label>
+                <input type="number" name="txtAnoNascimento" id="txtAnoNascimento">
+            </div>
+            <div>
+                <label for="">Estado Civil</label>
+                <select name="cboEstadoCivil" id="cboEstadoCivil">
+                    <option value="1">Solteiro</option>
+                    <option value="1">Casado</option>
+                    <option value="1">Divorciado</option>
+                    <option value="1">Viuvo</option>
+                    <option value="1">Amasiado</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Sexo</label>
+                <input type="radio" name="rdSexo" id="rdSexo" value="0">Feminino
+                <br>
+                <input type="radio" name="rdSexo" id="rdSexo" value="1">Masculino
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <div>
+                <label for="">Cargo</label><br>
+                <input type="radio" name="rdCargo" id="rdCargo" value="1">Gerente Administrativo <br>
+                <input type="radio" name="rdCargo" id="rdCargo" value="1">Gerente Financeiro <br>
+                <input type="radio" name="rdCargo" id="rdCargo" value="1">Gerente Redes <br>
+                <input type="radio" name="rdCargo" id="rdCargo" value="1">Gerente Desenvolvimento <br>
+            </div>
+            <div>
+                <label for="">Área de Interesse</label>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="1"> Requsitos <br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="2"> RH <br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="3"> Infraestrutura <br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="4"> Ciência de Dados <br>
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
