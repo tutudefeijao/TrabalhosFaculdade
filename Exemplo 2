@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 14 html - FORMULÁRIO</title>
+</head>
+
+<body>
+    <form action="pgdestino.php" method="post">
+        <div>
+            <p>
+                <label for="">Nome</label>
+                <input type="text" name="txtNome" id="txtNome">
+            </p>
+            <div>
+                <p>
+                    <label for="">Telefone</label>
+                    <input type="text" name="txtTelefone" id="txtTelefone">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Horário de Saída</label>
+                    <input type="time" name="txtHorario" id="txtHorario" min="2023-01-1" max="2023-12-31">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Data de Saída</label>
+                    <input type="date" name="txtData" id="txtData">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Ano Nascimento</label>
+                    <input type="number" name="txtAno" id="txtAno" min="1910" max="2030" step="10">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Cor de Preferência</label>
+                    <input type="color" name="txtColor" id="txtColor">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Digite um texto de até 25 caracteres</label>
+                    <input type="text" name="txtTexto" id="txtTexto" maxlength="25" minlength="5">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Apenas Letras</label>
+                    <input type="text" name="txtLetras" id="txtLetras" pattern="[a-z\s]
+            +$">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Apenas Números</label>
+                    <input type="text" name="txtNumeros" id="txtNumeros" pattern="[0-9]
+            +$">
+                </p>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+    </form>
+
+</body>
+
+</html>
